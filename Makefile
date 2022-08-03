@@ -22,7 +22,7 @@ MODOBJ=random.o utils.o io_ramses.o
 # Make all targets
 #all: amr2prof amr2cylprof ramses2tipsy amr2map part2map part2prof \
      part2cube part2list partcenter part2birth part2sfr getstarlist \
-     amr2cube amr2cube_joe amr2cube_joe_summit amr2cube_summit amr2cube_summit_type getstarlist_summit
+     amr2cube amr2cube_summit_type getstarlist_summit
 
 all: getstarlist amr2cube
 
