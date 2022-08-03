@@ -10,7 +10,7 @@ snapshot & file numbers are encoded on 6 digits (versus default ramses' 5).
 
 Compile using make amr2cube_summit_type
 
-Use as ([] denote required input, % are explanatory comments to be omitted in a real call to the executable, line jumps were added for readability):
+Use as ([] denote required input; line jumps were added for readability):
 
 ./amr2cube_summit_type -inp [str, path to input dir]   
                        -out [str, path to output dir]   
@@ -21,11 +21,19 @@ Use as ([] denote required input, % are explanatory comments to be omitted in a 
                        -yma [float, max y coord]  
                        -zmi [float, min z coord]  
                        -zma [float, max z coord] 
-                       -rho %write gas densities  
-                       -rhod %write dust densities  
-                       -vx %write x dir gas velocities  
-                       -vy %write y dir gas velocities  
-                       -vz %write z dir gas velocities  
-                       -metal %write gas metallicities  
-                       -xion %write the ionised fraction of H gas from ATON  
+                       -rho [int, type int associated with field] 
+                       -rhod [int, type int associated with field]
+                       -vx [int, type int associated with field] 
+                       -vy [int, type int associated with field]
+                       -vz [int, type int associated with field]  
+                       -metal [int, type int associated with field]  
+                       -xion [int, type int associated with field] 
+                       
+                       
+As a reminder, a list of the type ints and associated fields can be found in each snapshot output folder in the file "hydro_part_descriptor.txt"
+rho -> gas density
+rhod -> dust densities
+vx, vy, vz -> gas velocities
+metal -> gas metallicities
+xion -> ATON H gas ionisation fraction
 
