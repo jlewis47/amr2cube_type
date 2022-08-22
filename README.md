@@ -5,7 +5,7 @@ Base code found in ramses bitbucket under utils/f90
 
 Original version would read all data then write output for one field, this modification allows writing several fields at once using a set of preconfigured 
 arguments/names. Written files are named automatically according to the choices of fields.
-Note that there are further modifications allowing execution for the Cosmic Dawn II simulation : input files are split amongst 16 directories for each 
+Note that there are further modifications allowing execution for the Cosmic Dawn III simulation : input files are split amongst 16 directories for each 
 snapshot & file numbers are encoded on 6 digits (versus default ramses' 5).
 
 Compile using make amr2cube_summit_type
@@ -36,4 +36,6 @@ rhod -> dust densities
 vx, vy, vz -> gas velocities
 metal -> gas metallicities
 xion -> ATON H gas ionisation fraction
+
+The field arguments are optional, but if none are selected, nothing will be written!
 
